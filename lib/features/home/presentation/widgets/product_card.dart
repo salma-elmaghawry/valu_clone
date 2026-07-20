@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:valu_clone/core/animations/animations.dart';
-import 'package:valu_clone/core/theme/app_colors.dart';
-import 'package:valu_clone/core/utils/app_assets.dart';
-import 'package:valu_clone/core/utils/app_text_styles.dart';
+import 'package:no_wait/core/animations/animations.dart';
+import 'package:no_wait/core/theme/app_colors.dart';
+import 'package:no_wait/core/utils/app_assets.dart';
+import 'package:no_wait/core/utils/app_text_styles.dart';
 
 class ProductCard extends StatelessWidget {
   final String? discountLabel;

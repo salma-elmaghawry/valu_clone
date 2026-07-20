@@ -1,5 +1,5 @@
 {
-    "app_name": "valU",
+    "app_name": "No Wait",
     "common": {
         "ok": "OK",
         "cancel": "Cancel",
@@ -32,7 +32,7 @@
             "percent": "20%",
             "moneyback": "Moneyback",
             "with": "with",
-            "card": "Valu Prepaid Card",
+            "card": "No Wait Prepaid Card",
             "terms": "Terms and conditions apply"
         },
         "bnpl": {
@@ -63,9 +63,32 @@
             "email_in_use": "This email is already registered",
             "rate_limit_exceeded": "Too many requests. Please wait a while before trying again",
             "invalid_otp": "Code has expired or is invalid",
-            "email_not_confirmed": "Email not confirmed"
+            "email_not_confirmed": "Email not confirmed",
+            "email_not_found": "No account found with this email"
+        },
+        "splash": {
+            "tagline": "Shop now. Pay your way."
+        },
+        "intro": {
+            "title": "Buy now, pay later",
+            "subtitle": "Split your purchases into easy installments with No Wait — no lines, no waiting.",
+            "login_btn": "Log in",
+            "register_btn": "Create account"
+        },
+        "forgot": {
+            "title": "Forgot password?",
+            "subtitle": "Enter your email and we'll send you a reset link",
+            "button": "Send reset link",
+            "success": "Reset link sent! Check your inbox"
         },
         "login": {
+            "title": "Welcome back",
+            "subtitle": "Log in to continue shopping",
+            "button": "Log in",
+            "no_account": "Don't have an account?",
+            "register_link": "Create one",
+            "forgot_password": "Forgot password?",
+            "demo_hint": "Demo account — email: demo@nowait.com · password: 123456",
             "email_label": "Email",
             "email_hint": "Enter your email",
             "email_required": "Email is required",
@@ -76,6 +99,15 @@
             "password_length": "Password must be at least 6 characters"
         },
         "signup": {
+            "title": "Create your account",
+            "subtitle": "Join No Wait in a few easy steps",
+            "button": "Create account",
+            "have_account": "Already have an account?",
+            "login_link": "Log in",
+            "name_label": "Full name",
+            "name_hint": "Enter your full name",
+            "confirm_label": "Confirm password",
+            "confirm_hint": "Re-enter your password",
             "name_required": "Name is required",
             "password_mismatch": "Passwords do not match"
         }

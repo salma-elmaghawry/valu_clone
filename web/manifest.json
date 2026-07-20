@@ -1,11 +1,11 @@
 {
-    "name": "valu_clone",
-    "short_name": "valu_clone",
+    "name": "No Wait",
+    "short_name": "No Wait",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#FF5100",
+    "theme_color": "#FF5100",
+    "description": "No Wait — buy now, pay later app.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

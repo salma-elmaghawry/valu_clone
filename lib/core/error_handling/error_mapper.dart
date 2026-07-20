@@ -3,6 +3,7 @@ import 'dart:io';
 
 import 'package:easy_localization/easy_localization.dart';
 
+import 'app_exceptions.dart';
 import 'failures.dart';
 
 /// Maps raw exceptions from any layer into typed, localized [Failure]s.
@@ -12,6 +13,20 @@ import 'failures.dart';
 /// generic ones (see the Supabase example at the bottom of this file).
 class ErrorMapper {
   static Failure map(dynamic error) {
+    if (error is InvalidCredentialsException) {
+      return InvalidCredentialsFailure(
+        message: 'auth.errors.invalid_credentials'.tr(),
+      );
+    }
+
+    if (error is EmailAlreadyInUseException) {
+      return EmailAlreadyInUseFailure(message: 'auth.errors.email_in_use'.tr());
+    }
+
+    if (error is UserNotFoundException) {
+      return UserNotFoundFailure(message: 'auth.errors.email_not_found'.tr());
+    }
+
     if (error is SocketException || error is TimeoutException) {
       return NetworkFailure(message: 'errors.network_error'.tr());
     }

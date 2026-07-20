@@ -2,9 +2,9 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:valu_clone/app.dart';
-import 'package:valu_clone/core/injection/injection_container.dart';
-import 'package:valu_clone/core/theme/controller/theme_cubit.dart';
+import 'package:no_wait/app.dart';
+import 'package:no_wait/core/injection/injection_container.dart';
+import 'package:no_wait/core/theme/controller/theme_cubit.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -24,7 +24,7 @@ void main() async {
         providers: [
           BlocProvider<ThemeCubit>(create: (context) => getIt<ThemeCubit>()),
         ],
-        child: const ValuApp(),
+        child: const NoWaitApp(),
       ),
     ),
   );

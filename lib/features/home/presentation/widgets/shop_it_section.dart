@@ -2,11 +2,11 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:valu_clone/core/animations/animations.dart';
-import 'package:valu_clone/core/helpers/spacing.dart';
-import 'package:valu_clone/core/utils/app_assets.dart';
-import 'package:valu_clone/core/utils/app_text_styles.dart';
-import 'package:valu_clone/features/home/presentation/widgets/product_card.dart';
+import 'package:no_wait/core/animations/animations.dart';
+import 'package:no_wait/core/helpers/spacing.dart';
+import 'package:no_wait/core/utils/app_assets.dart';
+import 'package:no_wait/core/utils/app_text_styles.dart';
+import 'package:no_wait/features/home/presentation/widgets/product_card.dart';
 
 class ShopItSection extends StatelessWidget {
   const ShopItSection({super.key});

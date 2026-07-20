@@ -3,12 +3,12 @@ class AppAssets {
 
   static const String _icons = 'assets/icons';
   static const String _images = 'assets/images';
+  static const String _logo = 'assets/images/logo';
   static const String _lottie = 'assets/lottie';
 
-  // Logos
-  static const String valuLogo = '$_images/valu_logo.svg';
-  static const String valuWhiteLogo = '$_images/valu_white_logo.svg';
-  static const String valuMark = '$_icons/ic_valu.svg'; // u* mark
+  // Logos (No Wait brand)
+  static const String logo = '$_logo/logo-compact.png'; // colored wordmark
+  static const String logoMark = '$_logo/nw_mark.png'; // white nw mark (trimmed)
   static const String shopItLogo = '$_icons/ic_shop_it.svg';
 
   // Navigation bar

@@ -31,6 +31,10 @@ class TooManyRequestsFailure extends Failure {
   const TooManyRequestsFailure({required super.message});
 }
 
+class UserNotFoundFailure extends Failure {
+  const UserNotFoundFailure({required super.message});
+}
+
 // Network failures
 
 class NetworkFailure extends Failure {

@@ -2,10 +2,10 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:valu_clone/core/animations/animations.dart';
-import 'package:valu_clone/core/theme/app_colors.dart';
-import 'package:valu_clone/core/utils/app_assets.dart';
-import 'package:valu_clone/core/utils/app_text_styles.dart';
+import 'package:no_wait/core/animations/animations.dart';
+import 'package:no_wait/core/theme/app_colors.dart';
+import 'package:no_wait/core/utils/app_assets.dart';
+import 'package:no_wait/core/utils/app_text_styles.dart';
 
 class HomeBottomNavBar extends StatelessWidget {
   final int currentIndex;
@@ -57,10 +57,14 @@ class HomeBottomNavBar extends StatelessWidget {
             currentIndex: currentIndex,
             onTap: onTap,
             label: 'home.nav.stores'.tr(),
-            iconBuilder: (color) => SvgPicture.asset(
-              AppAssets.valuMark,
+            iconBuilder: (color) => SizedBox(
               height: 22.r,
-              colorFilter: ColorFilter.mode(color, BlendMode.srcIn),
+              child: Image.asset(
+                AppAssets.logoMark,
+                width: 24.w,
+                color: color,
+                fit: BoxFit.contain,
+              ),
             ),
           ),
           _NavItem(

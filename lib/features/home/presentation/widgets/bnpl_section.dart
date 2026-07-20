@@ -1,12 +1,11 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:valu_clone/core/animations/animations.dart';
-import 'package:valu_clone/core/helpers/spacing.dart';
-import 'package:valu_clone/core/theme/app_colors.dart';
-import 'package:valu_clone/core/utils/app_assets.dart';
-import 'package:valu_clone/core/utils/app_text_styles.dart';
+import 'package:no_wait/core/animations/animations.dart';
+import 'package:no_wait/core/helpers/spacing.dart';
+import 'package:no_wait/core/theme/app_colors.dart';
+import 'package:no_wait/core/utils/app_assets.dart';
+import 'package:no_wait/core/utils/app_text_styles.dart';
 
 class BnplSection extends StatelessWidget {
   const BnplSection({super.key});
@@ -30,7 +29,11 @@ class BnplSection extends StatelessWidget {
         children: [
           Row(
             children: [
-              SvgPicture.asset(AppAssets.valuMark, width: 30.w),
+              Image.asset(
+                AppAssets.logoMark,
+                width: 30.w,
+                color: AppColors.primary,
+              ),
               horizontalSpace(8),
               Expanded(
                 child: FittedBox(

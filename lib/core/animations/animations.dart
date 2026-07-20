@@ -15,7 +15,7 @@
 ///
 /// Usage:
 /// ```dart
-/// import 'package:valu_clone/core/animations/animations.dart';
+/// import 'package:no_wait/core/animations/animations.dart';
 ///
 /// // Use extension methods
 /// MyWidget().fadeInSlideUp(delay: 100.ms);

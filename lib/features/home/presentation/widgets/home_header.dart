@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:valu_clone/core/animations/animations.dart';
-import 'package:valu_clone/core/theme/controller/theme_cubit.dart';
-import 'package:valu_clone/core/theme/controller/theme_state.dart';
-import 'package:valu_clone/core/utils/app_assets.dart';
+import 'package:no_wait/core/animations/animations.dart';
+import 'package:no_wait/core/theme/controller/theme_cubit.dart';
+import 'package:no_wait/core/theme/controller/theme_state.dart';
+import 'package:no_wait/core/utils/app_assets.dart';
 
 class HomeHeader extends StatelessWidget {
   const HomeHeader({super.key});
@@ -16,7 +16,7 @@ class HomeHeader extends StatelessWidget {
 
     return Row(
       children: [
-        SvgPicture.asset(AppAssets.valuLogo, height: 26.h),
+        Image.asset(AppAssets.logo, height: 26.h),
         const Spacer(),
         BlocBuilder<ThemeCubit, ThemeState>(
           builder: (context, themeState) {

@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:valu_clone/core/animations/animations.dart';
-import 'package:valu_clone/core/helpers/spacing.dart';
-import 'package:valu_clone/features/home/presentation/widgets/bnpl_section.dart';
-import 'package:valu_clone/features/home/presentation/widgets/home_bottom_nav_bar.dart';
-import 'package:valu_clone/features/home/presentation/widgets/home_header.dart';
-import 'package:valu_clone/features/home/presentation/widgets/promo_banner_carousel.dart';
-import 'package:valu_clone/features/home/presentation/widgets/registration_progress_card.dart';
-import 'package:valu_clone/features/home/presentation/widgets/shop_it_section.dart';
+import 'package:no_wait/core/animations/animations.dart';
+import 'package:no_wait/core/helpers/spacing.dart';
+import 'package:no_wait/features/home/presentation/widgets/bnpl_section.dart';
+import 'package:no_wait/features/home/presentation/widgets/home_bottom_nav_bar.dart';
+import 'package:no_wait/features/home/presentation/widgets/home_header.dart';
+import 'package:no_wait/features/home/presentation/widgets/promo_banner_carousel.dart';
+import 'package:no_wait/features/home/presentation/widgets/registration_progress_card.dart';
+import 'package:no_wait/features/home/presentation/widgets/shop_it_section.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
