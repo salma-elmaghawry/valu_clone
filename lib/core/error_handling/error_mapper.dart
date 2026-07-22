@@ -19,12 +19,16 @@ class ErrorMapper {
       );
     }
 
-    if (error is EmailAlreadyInUseException) {
-      return EmailAlreadyInUseFailure(message: 'auth.errors.email_in_use'.tr());
+    if (error is PhoneAlreadyInUseException) {
+      return PhoneAlreadyInUseFailure(message: 'auth.errors.phone_in_use'.tr());
     }
 
     if (error is UserNotFoundException) {
-      return UserNotFoundFailure(message: 'auth.errors.email_not_found'.tr());
+      return UserNotFoundFailure(message: 'auth.errors.account_not_found'.tr());
+    }
+
+    if (error is InvalidOtpException) {
+      return InvalidOtpFailure(message: 'auth.errors.invalid_otp'.tr());
     }
 
     if (error is SocketException || error is TimeoutException) {

@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:convert';
 
 import 'package:shared_preferences/shared_preferences.dart';
@@ -25,7 +26,14 @@ class AuthLocalDataSourceImpl implements AuthLocalDataSource {
   UserModel? getCachedUser() {
     final raw = _prefs.getString(_userKey);
     if (raw == null) return null;
-    return UserModel.fromJson(jsonDecode(raw) as Map<String, dynamic>);
+    try {
+      return UserModel.fromJson(jsonDecode(raw) as Map<String, dynamic>);
+    } catch (_) {
+      // Cached payload doesn't match the current schema (e.g. left over
+      // from before a data-model change) — drop it instead of crashing.
+      unawaited(clearUser());
+      return null;
+    }
   }
 
   @override

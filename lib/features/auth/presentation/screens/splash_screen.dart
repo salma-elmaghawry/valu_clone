@@ -47,9 +47,10 @@ class _SplashScreenState extends State<SplashScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset(AppAssets.logo, width: 200.w)
-                .popIn(duration: AppAnimations.verySlow)
-                .shimmer(),
+            Image.asset(
+              AppAssets.logo,
+              width: 200.w,
+            ).popIn(duration: AppAnimations.verySlow).shimmer(),
             verticalSpace(16),
             Text(
               'auth.splash.tagline'.tr(),

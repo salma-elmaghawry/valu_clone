@@ -30,10 +30,10 @@ class IntroScreen extends StatelessWidget {
                 ),
               ),
               child: Center(
-                child: Image.asset(AppAssets.logo, width: 190.w)
-                    .pulse()
-                    .shimmer()
-                    .fadeInScale(duration: AppAnimations.slow),
+                child: Image.asset(
+                  AppAssets.logo,
+                  width: 190.w,
+                ).pulse().shimmer().fadeInScale(duration: AppAnimations.slow),
               ),
             ),
           ),

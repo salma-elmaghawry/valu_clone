@@ -60,11 +60,10 @@
     "auth": {
         "errors": {
             "invalid_credentials": "Invalid login credentials",
-            "email_in_use": "This email is already registered",
+            "phone_in_use": "This mobile number is already registered",
             "rate_limit_exceeded": "Too many requests. Please wait a while before trying again",
             "invalid_otp": "Code has expired or is invalid",
-            "email_not_confirmed": "Email not confirmed",
-            "email_not_found": "No account found with this email"
+            "account_not_found": "No account found for these details"
         },
         "splash": {
             "tagline": "Shop now. Pay your way."
@@ -75,41 +74,82 @@
             "login_btn": "Log in",
             "register_btn": "Create account"
         },
-        "forgot": {
-            "title": "Forgot password?",
-            "subtitle": "Enter your email and we'll send you a reset link",
-            "button": "Send reset link",
-            "success": "Reset link sent! Check your inbox"
-        },
         "login": {
-            "title": "Welcome back",
-            "subtitle": "Log in to continue shopping",
-            "button": "Log in",
-            "no_account": "Don't have an account?",
-            "register_link": "Create one",
-            "forgot_password": "Forgot password?",
-            "demo_hint": "Demo account — email: demo@nowait.com · password: 123456",
-            "email_label": "Email",
-            "email_hint": "Enter your email",
-            "email_required": "Email is required",
-            "email_invalid": "Enter a valid email",
+            "appbar_title": "Login",
+            "title": "Welcome back to No Wait",
+            "subtitle": "Your lifestyle enabling solution",
+            "button": "Login",
+            "no_account": "New No Wait Member?",
+            "register_link": "Register",
+            "cant_login": "Can't login? Click here",
+            "demo_hint": "Demo account — mobile: 01019222298 · password: NoWait@2026",
+            "phone_label": "Mobile Number",
+            "phone_hint": "Mobile Number",
+            "phone_required": "Mobile number is required",
+            "phone_invalid": "Enter a valid Egyptian mobile number",
             "password_label": "Password",
-            "password_hint": "Enter your password",
-            "password_required": "Password is required",
-            "password_length": "Password must be at least 6 characters"
+            "password_hint": "Your Password",
+            "password_required": "Password is required"
+        },
+        "cant_login": {
+            "appbar_title": "Can't Login",
+            "title": "Can't Login",
+            "subtitle": "Let us know if you'd like to reset your password or change your mobile number.",
+            "forgot_password": "Forgot Password",
+            "change_mobile": "Change Mobile Number"
+        },
+        "national_id": {
+            "appbar_title": "National ID",
+            "title": "National ID",
+            "subtitle": "Enter the national ID in the format XXXXXXXXXXXXXX (14 digits)",
+            "hint": "National ID number",
+            "button": "Continue",
+            "required": "National ID is required",
+            "invalid": "Enter a valid 14-digit national ID"
+        },
+        "change_mobile": {
+            "appbar_title": "Change Mobile Number",
+            "heading": "Change number",
+            "subtitle": "Verify your identity to proceed with changing your number.",
+            "phone_label": "Phone Number",
+            "national_id_label": "National ID number",
+            "button": "Continue",
+            "success": "Mobile number successfully changed"
         },
         "signup": {
-            "title": "Create your account",
-            "subtitle": "Join No Wait in a few easy steps",
-            "button": "Create account",
+            "appbar_title": "Registration",
+            "title": "Start with your mobile number",
+            "subtitle": "Welcome to No Wait",
+            "button": "Confirm Mobile Number",
             "have_account": "Already have an account?",
-            "login_link": "Log in",
-            "name_label": "Full name",
-            "name_hint": "Enter your full name",
-            "confirm_label": "Confirm password",
-            "confirm_hint": "Re-enter your password",
-            "name_required": "Name is required",
-            "password_mismatch": "Passwords do not match"
+            "login_link": "Log in"
+        },
+        "otp": {
+            "appbar_title": "Mobile verification",
+            "heading": "Verify your mobile number",
+            "subtitle": "Please enter the verification code you received",
+            "expires_in": "OTP expires in {}",
+            "resend": "Resend code",
+            "demo_hint": "Demo OTP: 123456"
+        },
+        "create_password": {
+            "appbar_title": "Create Password",
+            "heading": "Set your password",
+            "subtitle": "Please enter your password",
+            "password_hint": "Enter your password",
+            "confirm_hint": "Confirm your password",
+            "policy_title": "Password Policy",
+            "policy_length": "Password length must be between 8 – 30 characters.",
+            "policy_case_digit": "A minimum of 1 uppercase character, 1 lowercase character and 1 digit.",
+            "policy_repeat": "Same character cannot be repeated more than 3 times.",
+            "policy_special": "Must contain at least one special character ! # ( ) * - / : ? @ [ ] ^",
+            "button": "Confirm",
+            "mismatch": "Passwords do not match"
+        },
+        "success": {
+            "register_title": "Account successfully created",
+            "reset_title": "Password successfully reset",
+            "continue_button": "Continue"
         }
     }
 }

@@ -23,8 +23,8 @@ class EmailNotConfirmedFailure extends Failure {
   const EmailNotConfirmedFailure({required super.message});
 }
 
-class EmailAlreadyInUseFailure extends Failure {
-  const EmailAlreadyInUseFailure({required super.message});
+class PhoneAlreadyInUseFailure extends Failure {
+  const PhoneAlreadyInUseFailure({required super.message});
 }
 
 class TooManyRequestsFailure extends Failure {
