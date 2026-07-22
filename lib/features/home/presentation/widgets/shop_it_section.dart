@@ -6,10 +6,13 @@ import 'package:no_wait/core/animations/animations.dart';
 import 'package:no_wait/core/helpers/spacing.dart';
 import 'package:no_wait/core/utils/app_assets.dart';
 import 'package:no_wait/core/utils/app_text_styles.dart';
+import 'package:no_wait/features/home/domain/entities/shop_it_product.dart';
 import 'package:no_wait/features/home/presentation/widgets/product_card.dart';
 
 class ShopItSection extends StatelessWidget {
-  const ShopItSection({super.key});
+  final List<ShopItProduct> products;
+
+  const ShopItSection({super.key, required this.products});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +25,7 @@ class ShopItSection extends StatelessWidget {
           padding: EdgeInsetsDirectional.symmetric(horizontal: 16.w),
           child: Row(
             children: [
-              SvgPicture.asset(AppAssets.shopItLogo, height: 22.h),
+              SvgPicture.asset(AppAssets.shopItLogo, height: 20.h),
               const Spacer(),
               AnimatedTap(
                 onTap: () {},
@@ -66,14 +69,14 @@ class ShopItSection extends StatelessWidget {
         ),
         verticalSpace(14),
         SizedBox(
-          height: 170.h,
+          height: 230.h,
           child: ListView.separated(
             scrollDirection: Axis.horizontal,
             padding: EdgeInsetsDirectional.symmetric(horizontal: 16.w),
-            itemCount: 4,
+            itemCount: products.length,
             separatorBuilder: (_, _) => horizontalSpace(10),
             itemBuilder: (context, index) {
-              return ProductCard(discountLabel: index == 1 ? '21%' : null);
+              return ProductCard(product: products[index]);
             },
           ),
         ),

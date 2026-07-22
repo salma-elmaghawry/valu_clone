@@ -5,6 +5,7 @@ class AppAssets {
   static const String _images = 'assets/images';
   static const String _logo = 'assets/images/logo';
   static const String _lottie = 'assets/lottie';
+  static const String _productHome = 'assets/images/product in home';
 
   // Logos (No Wait brand)
   static const String logo = '$_logo/logo-compact.png'; // colored wordmark
@@ -23,6 +24,14 @@ class AppAssets {
   static const String notification = '$_icons/notification.svg';
   static const String carLoanAnnouncementDark =
       '$_images/car_loan_announcement_dark.png';
+
+  // Products grid logos
+  static const String prepaidCardLogo = '$_productHome/prepaid_logo.svg';
+  static const String cashAdvanceLogo = '$_productHome/sha2lbaz_logo.svg';
+  static const String autoFinanceLogo = '$_productHome/shift_logo.png';
+  static const String sendMoneyLogo = '$_productHome/flip_logo.svg';
+  static const String investLogo = '$_productHome/invest_logo.svg';
+  static const String businessLogo = '$_productHome/business_logo.svg';
 
   // Lottie
   static const String lockedAccount = '$_lottie/locked_account.json';

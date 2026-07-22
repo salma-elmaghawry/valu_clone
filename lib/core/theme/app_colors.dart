@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 class AppColors {
-  // Primary Colors (Valu brand)
-  static const Color primary = Color(0xFFFF5100); // Valu orange
-  static const Color secondary = Color(0xFF00C4B3); // Valu teal
+  // Primary Colors (No Wait brand)
+  static const Color primary = Color(0xFFFF5100); // No Wait orange
+  static const Color secondary = Color(0xFF00C4B3); // No Wait teal
   static const Color third = Color(0xFF8347AD); // purple accent
 
   // Brand accents (identical in both themes)
@@ -11,7 +11,7 @@ class AppColors {
   static const Color darkTeal = Color(0xFF355E60);
   static const Color warmSurface = Color(0xFFF7E6DC);
   static const Color borderNeutral = Color(0xFFDFE5E5);
-  static const Color discountBadge = Color(0xFFCDA43B);
+  static const Color discountBadge = Color(0xFFF6E3A1);
 
   // Light Theme Colors
   static const Color backgroundLight = Color(0xFFF4F7F7);

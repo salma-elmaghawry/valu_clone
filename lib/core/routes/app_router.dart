@@ -13,7 +13,9 @@ import 'package:no_wait/features/auth/presentation/screens/login_screen.dart';
 import 'package:no_wait/features/auth/presentation/screens/otp_verification_screen.dart';
 import 'package:no_wait/features/auth/presentation/screens/register_screen.dart';
 import 'package:no_wait/features/auth/presentation/screens/splash_screen.dart';
+import 'package:no_wait/features/home/presentation/cubit/home_cubit.dart';
 import 'package:no_wait/features/home/presentation/screens/home_screen.dart';
+import 'package:no_wait/features/profile/presentation/screens/profile_screen.dart';
 
 class AppRouter {
   Route<dynamic> generateRoute(RouteSettings settings) {
@@ -78,7 +80,15 @@ class AppRouter {
         );
 
       case Routes.home:
-        return MaterialPageRoute(builder: (_) => const HomeScreen());
+        return MaterialPageRoute(
+          builder: (_) => BlocProvider(
+            create: (_) => getIt<HomeCubit>()..fetchHomeSummary(),
+            child: const HomeScreen(),
+          ),
+        );
+
+      case Routes.profile:
+        return MaterialPageRoute(builder: (_) => const ProfileScreen());
 
       default:
         return MaterialPageRoute(

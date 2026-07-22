@@ -19,6 +19,9 @@
         "theme_system": "النظام"
     },
     "home": {
+        "header": {
+            "consumer_loans": "قروض استهلاكية"
+        },
         "registration": {
             "online": "التسجيل أونلاين",
             "activate": "فعّل حسابك في أقرب منفذ",
@@ -40,9 +43,46 @@
             "view_stores": "عرض المتاجر",
             "search_hint": "ابحث عن المتاجر"
         },
+        "limit_blocked": {
+            "title": "حدك الائتماني محظور حالياً",
+            "subtitle": "قم بإلغاء حظر حدك الآن لمتابعة الشراء باستخدام نو وايت.",
+            "button": "إلغاء الحظر"
+        },
         "shop_it": {
             "subtitle": "وجهتك الواحدة لأكثر من 50,000 منتج.",
-            "explore": "استكشف"
+            "explore": "استكشف",
+            "discount_badge": "خصم {percent}%",
+            "fulfillment": {
+                "in_app_checkout": "الدفع داخل التطبيق",
+                "third_party_checkout": "الدفع عبر طرف ثالث"
+            }
+        },
+        "products": {
+            "title": "المنتجات",
+            "prepaid_card": {
+                "title": "بطاقة مسبقة الدفع",
+                "description": "ادفع باستخدام حدك في أي مكان في مصر"
+            },
+            "cash_advance": {
+                "title": "سلفة نقدية",
+                "description": "استبدل فواتيرك واحصل على نقود فورية"
+            },
+            "auto_finance": {
+                "title": "تمويل سيارات",
+                "description": "احصل على قرض لشراء سيارة جديدة أو مستعملة"
+            },
+            "send_money": {
+                "title": "تحويل الأموال",
+                "description": "أرسل واستقبل الأموال بسهولة"
+            },
+            "invest": {
+                "title": "استثمر",
+                "description": "اتخذ قرارات استثمارية ذكية"
+            },
+            "business": {
+                "title": "الأعمال",
+                "description": "استمتع بسهولة حلولنا لقطاع الأعمال"
+            }
         },
         "nav": {
             "home": "الرئيسية",
@@ -50,6 +90,42 @@
             "shop_it": "تسوّق",
             "profile": "حسابي",
             "menu": "القائمة"
+        }
+    },
+    "profile": {
+        "appbar_title": "الإعدادات",
+        "account_settings": {
+            "title": "إعدادات الحساب",
+            "password": {
+                "title": "كلمة المرور"
+            },
+            "biometric": {
+                "title": "تسجيل الدخول بالبصمة",
+                "description": "استخدم بصمتك أو التعرف على الوجه لتسجيل الدخول"
+            }
+        },
+        "preferences": {
+            "title": "التفضيلات",
+            "notifications": {
+                "title": "الإشعارات العامة",
+                "description": "ابقَ على اطلاع بأحدث عروضنا"
+            },
+            "dark_mode": {
+                "title": "الوضع الداكن",
+                "description": "نضبط المظهر تلقائياً حسب إعدادات نظام جهازك."
+            },
+            "language": {
+                "title": "تغيير اللغة",
+                "english": "English",
+                "arabic": "العربية"
+            }
+        },
+        "cache": {
+            "title": "التخزين المؤقت",
+            "clear": {
+                "title": "مسح البيانات المخزنة مؤقتاً",
+                "description": "امسح النسخة المخزنة من البيانات المقدمة من نو وايت لإعادة تحميل بيانات جديدة"
+            }
         }
     },
     "errors": {

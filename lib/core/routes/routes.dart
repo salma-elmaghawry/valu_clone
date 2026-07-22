@@ -12,6 +12,7 @@ class Routes {
   static const String createPassword = '/create-password';
   // main tabs
   static const String home = '/home';
+  static const String profile = '/profile';
   static const String settings = '/settings';
   // add feature routes below
 }

@@ -1,11 +1,11 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:no_wait/core/animations/animations.dart';
-import 'package:no_wait/core/theme/controller/theme_cubit.dart';
-import 'package:no_wait/core/theme/controller/theme_state.dart';
+import 'package:no_wait/core/theme/app_colors.dart';
 import 'package:no_wait/core/utils/app_assets.dart';
+import 'package:no_wait/core/utils/app_text_styles.dart';
 
 class HomeHeader extends StatelessWidget {
   const HomeHeader({super.key});
@@ -18,20 +18,24 @@ class HomeHeader extends StatelessWidget {
       children: [
         Image.asset(AppAssets.logo, height: 26.h),
         const Spacer(),
-        BlocBuilder<ThemeCubit, ThemeState>(
-          builder: (context, themeState) {
-            final isDark = _isDark(context, themeState.themeMode);
-            return AnimatedTap(
-              onTap: () => context.read<ThemeCubit>().setThemeMode(
-                isDark ? ThemeMode.light : ThemeMode.dark,
+        AnimatedTap(
+          onTap: () {},
+          child: Container(
+            height: 28.h,
+            padding: EdgeInsetsDirectional.symmetric(horizontal: 14.w),
+            alignment: Alignment.center,
+            decoration: BoxDecoration(
+              color: AppColors.secondary,
+              borderRadius: BorderRadius.circular(8.r),
+            ),
+            child: Text(
+              'home.header.consumer_loans'.tr(),
+              style: AppTextStyles.font12SemiBold.copyWith(
+                fontWeight: FontWeight.w700,
+                color: AppColors.backgroundDark,
               ),
-              child: Icon(
-                isDark ? Icons.light_mode_outlined : Icons.dark_mode_outlined,
-                size: 22.r,
-                color: colorScheme.onSurface,
-              ),
-            );
-          },
+            ),
+          ),
         ),
         SizedBox(width: 16.w),
         AnimatedTap(
@@ -47,11 +51,5 @@ class HomeHeader extends StatelessWidget {
         ),
       ],
     );
-  }
-
-  bool _isDark(BuildContext context, ThemeMode mode) {
-    if (mode == ThemeMode.dark) return true;
-    if (mode == ThemeMode.light) return false;
-    return MediaQuery.platformBrightnessOf(context) == Brightness.dark;
   }
 }

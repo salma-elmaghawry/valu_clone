@@ -74,6 +74,7 @@ flutter:
     - assets/translations/
     - assets/images/
     - assets/images/logo/
+    - assets/images/product in home/
     - assets/icons/
     - assets/lottie/
 

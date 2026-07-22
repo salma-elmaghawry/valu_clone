@@ -19,6 +19,9 @@
         "theme_system": "System"
     },
     "home": {
+        "header": {
+            "consumer_loans": "Consumer Loans"
+        },
         "registration": {
             "online": "Online Registration",
             "activate": "Activate your account at the nearest booth",
@@ -40,9 +43,46 @@
             "view_stores": "View Stores",
             "search_hint": "Search for stores"
         },
+        "limit_blocked": {
+            "title": "Your limit is currently blocked",
+            "subtitle": "Unblock your limit now to continue making purchases using No Wait.",
+            "button": "Unblock Limit"
+        },
         "shop_it": {
             "subtitle": "Your one-stop shop for 50,000+ products.",
-            "explore": "Explore"
+            "explore": "Explore",
+            "discount_badge": "{percent}% Off",
+            "fulfillment": {
+                "in_app_checkout": "In-App Checkout",
+                "third_party_checkout": "3rd-Party Checkout"
+            }
+        },
+        "products": {
+            "title": "Products",
+            "prepaid_card": {
+                "title": "Prepaid Card",
+                "description": "Pay using your limit anywhere in Egypt"
+            },
+            "cash_advance": {
+                "title": "Cash Advance",
+                "description": "Redeem your invoices to get instant cash"
+            },
+            "auto_finance": {
+                "title": "Auto Finance",
+                "description": "Get a loan to buy new or used cars"
+            },
+            "send_money": {
+                "title": "Send Money",
+                "description": "Send & receive money easily"
+            },
+            "invest": {
+                "title": "Invest",
+                "description": "Make smart decisions for investments"
+            },
+            "business": {
+                "title": "Business",
+                "description": "Experience the ease of our B2B solutions"
+            }
         },
         "nav": {
             "home": "Home",
@@ -50,6 +90,42 @@
             "shop_it": "Shop'IT",
             "profile": "Profile",
             "menu": "Menu"
+        }
+    },
+    "profile": {
+        "appbar_title": "Settings",
+        "account_settings": {
+            "title": "Account Settings",
+            "password": {
+                "title": "Your Password"
+            },
+            "biometric": {
+                "title": "Biometric Login",
+                "description": "Use your fingerprint or Face ID to log in"
+            }
+        },
+        "preferences": {
+            "title": "Preferences",
+            "notifications": {
+                "title": "General Notification",
+                "description": "Stay updated with our latest offers"
+            },
+            "dark_mode": {
+                "title": "Dark Mode",
+                "description": "We adjust your appearance based on your device system settings."
+            },
+            "language": {
+                "title": "Change Language",
+                "english": "English",
+                "arabic": "العربية"
+            }
+        },
+        "cache": {
+            "title": "Cache",
+            "clear": {
+                "title": "Clear Cached Data",
+                "description": "Clear the stored copy of the data provided by No Wait to reload new data"
+            }
         }
     },
     "errors": {

@@ -74,6 +74,7 @@ class BnplSection extends StatelessWidget {
           verticalSpace(16),
           TextField(
             readOnly: true,
+            onTap: () {},
             // ScreenUtil reports 0 on the first zero-sized frame; a scaled
             // strut fontSize of 0 trips TextField's assertion.
             strutStyle: StrutStyle.disabled,
